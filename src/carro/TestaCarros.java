@@ -16,6 +16,18 @@ public class TestaCarros {
         objetoFerrari.dadosMotor.qtdeValvula=16;
 
         objetoFerrari.exibirDados();
-    }
+    
+        Carro objetoLamborghini=new Carro();
+        objetoLamborghini.ano=2021;
+        objetoLamborghini.cor="Grafitte";
+        objetoLamborghini.marca="Lamborghini";
+        objetoLamborghini.modelo="Lamborghini Turbo";
+        objetoLamborghini.placa="LAM3456";
+        objetoLamborghini.dadosMotor.modeloMotor="Turbo";
+        objetoLamborghini.dadosMotor.combustivelTipo="Gasolina";
+        objetoLamborghini.dadosMotor.potencia=5.6;
+        objetoLamborghini.dadosMotor.qtdeValvula=16;
 
+        objetoLamborghini.exibirDados();
+    }
 }
