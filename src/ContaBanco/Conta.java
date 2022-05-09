@@ -56,23 +56,24 @@ public class Conta {
         return contaDestino.saldo = contaDestino.saldo+valorDeposito;
     }
 
-    public double tranferir(Conta contaOrigem, Conta contaDestino, double valorTransferencia){
+    public double tranferir(Conta contaDestino, double valorTransferencia){
         contaDestino.saldo = contaDestino.saldo + valorTransferencia;
-        return contaOrigem.saldo = contaOrigem.saldo - valorTransferencia;
+        return saldo = saldo - valorTransferencia;
 
     }
 
-    public double sacar(Conta contaOrigem, double valorSaque){
-        return contaOrigem.saldo = contaOrigem.saldo - valorSaque;
+    public double sacar(double valorSaque){
+        return saldo = saldo - valorSaque;
 
     }
-
+/*
     public double pix(Conta contaOrigem, String chavePix, double valorPix){
         contaDestino.saldo = contaDestino.saldo + valorPix;
         return  contaOrigem.saldo = contaOrigem.saldo - valorPix;
     }
 
     public Conta buscarContaPix(String chavePix, List<Conta> listaContasDestinos){
+
         for (Conta contaDestino:listaContasDestinos) {
             if (contaDestino.getCpf().equals(chavePix)) {
                 return contaDestino;
@@ -80,7 +81,7 @@ public class Conta {
             return null; // continuar a partir daqui
         }
     }
-
+*/
     public void exibirExtrato(){
         System.out.println("=============== Extrato do dia: "+ LocalDateTime.now()+" ===============");
         System.out.println("Nome: "+nome);

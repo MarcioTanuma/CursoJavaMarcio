@@ -12,6 +12,7 @@ public class ContaTeste {
         objetoContaOrigem.exibirExtrato();
 
         objetoContaOrigem.depositar(objetoContaOrigem,500);
+        // System.out.println("Depósito para Conta: " +objetoContaOrigem.);
 
         objetoContaOrigem.exibirExtrato();
 
@@ -24,16 +25,16 @@ public class ContaTeste {
 
         objetoContaDestino.exibirExtrato();
 
-        objetoContaOrigem.tranferir(objetoContaOrigem, objetoContaDestino, 500);
+        objetoContaOrigem.tranferir(objetoContaDestino, 500);
 
         objetoContaOrigem.exibirExtrato();
         objetoContaDestino.exibirExtrato();
 
-        objetoContaDestino.sacar(objetoContaDestino, 115);
+        objetoContaDestino.sacar(115);
 
         objetoContaDestino.exibirExtrato();
 
-        objetoContaOrigem.pix(objetoContaOrigem, objetoContaDestino, 45);
+       // objetoContaOrigem.pix(objetoContaOrigem, objetoContaDestino, 45);
 
         objetoContaOrigem.exibirExtrato();
         objetoContaDestino.exibirExtrato();
